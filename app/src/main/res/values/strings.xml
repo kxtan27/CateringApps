@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">QE Catering</string>
+    <string name="signin_button">Sign In</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="logo_description">Logo</string>
+    <string name="menu_button">Menu</string>
+    <string name="profile_button">Profile</string>
+    <string name="gallery_button">Gallery</string>
+    <string name="order_button">Order</string>
+    <string name="aboutus_button">About Us</string>
+    <string name="submit_button">Submit</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="forget_pw">Forgot Password? </string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="confirm_pw">Confirm Password</string>
+    <string name="user">User</string>
+    <string name="caterer">Caterer</string>
+    <string name="select">Please Select : </string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_pw">Change Password</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="phone">Contact No.</string>
+    <string name="history">Order History</string>
+    <string name="signout">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="our_service">Our Service</string>
+    <string name="decoration">Decoration</string>
+    <string name="decoration_desc">Self our party scene with our delightful decoration.</string>
+    <string name="event">Event Planning</string>
+    <string name="event_desc">Event coordination play everything from weeding to large expos and trade shows. Event coordinators control an event from conception to clear up.</string>
+    <string name="florist">Florist</string>
+    <string name="florist_desc">Plan arrangement according  to client requirement, utilizing knowledge of design and properties of materials and select appropriate standard design pattern.</string>
+    <string name="learn_more">Learn More</string>
+    <string name="contact">Contact</string>
+    <string name="rate">Rate Us</string>
+    <string name="rate_desc">Please share your experience with us</string>
+    <string name="feedback">Feedback</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="num_of_ppl">Number of People</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="enter_order_details">Enter Order Details</string>
+    <string name="order_detail">Order Details</string>
+    <string name="cnf_order">Confirm Order</string>
+    <string name="bbq">BBQ Buffet</string>
+    <string name="price">Price From RM150++</string>
+    <string name="pack">Package</string>
+    <string name="desc">Descriptions</string>
+    <string name="add">Add to Order</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="detail">More Details</string>
+    <string name="pic">Image</string>
+    <string name="order">Order</string>
+    <string name="about_us">About Us</string>
+
+    <string name="ma">Menu A</string>
+    <string name="mb">Menu B</string>
+    <string name="mc">Menu C</string>
+    <string name="md">Menu D</string>
+    <string name="me">Menu E</string>
+
+    <string name="menu_a">Menu A
+        \nPrice: RM 17.00/pax
+        \n\nMenu Details:
+        \n- White Rice
+        \n- Meehoon Siam
+        \n- Rendang Chicken
+        \n- Egg Sauce Tofu with Peas
+        \n- Cabbage Mixed
+        \n- Deep Fried Seafood Dumpling
+        \n- Longan Jelly
+        \n- Iced Lemon Tea</string>
+
+    <string name="menu_b">Menu B
+        \nRM22.00/pax
+        \n\nMenu details:
+        \n- Pineapple Fried Rice
+        \n- Kueh Teow Goreng
+        \n- Ayam Goreng Berempah
+        \n- Paprik Seafood
+        \n- Stir Fry Cauliflower and Celery
+        \n- Nyonya Achar
+        \n- Mango Pudding
+        \n- Orange Cordial</string>
+
+    <string name="menu_c">Menu C
+        \nRM27.00/pax
+        \n\nMenu details:
+        \n- Chinese Fried Rice
+        \n- Braised Noodles
+        \n- Ayam Penyet Chop
+        \n- Seafood with Chilli Crab Sauce and Mantao
+        \n- Stir Fry Vegetables with Straw Mushroom
+        \n- Seafood Omelette
+        \n- Dalcha Sayur
+        \n- Garden Salad with Dressing
+        \n- Mixed Fresh Fruits
+        \n- Kiwi Cordial</string>
+
+    <string name="menu_d">Menu D
+        \nRM33.00/pax
+        \n\nMenu details:
+        \n- Kampung Fried Rice
+        \n- Singapore Fried Meehoon
+        \n- BBQ Chicken Teriyaki
+        \n- Ginger Fish Fillet
+        \n- Asam Prawn with Bendi
+        \n- Sambal Squid Paste Tofu
+        \n- Vegetable Kimchi Soup Malaysian Style
+        \n- Thai Glass Noodle Salad with Shredded Crab Sticks
+        \n- Keropok Udang
+        \n- Mixed Fresh Fruits
+        \n- Mango Cordial</string>
+
+    <string name="menu_e">Menu E
+        \nRM38.00/pax
+        \n\nMenu details:
+        \n- Nasi Briyani
+        \n- Spaghetti Aglio Olio
+        \n- Ayam Kapitan
+        \n- Ikan Tenggiri Goreng
+        \n- Thai Garlic Lime Seafood
+        \n- Lamb Stew and Mushroom with Rosemary Garnishing
+        \n- Sausage and Potato Wedges
+        \n- Lo Hon Chai
+        \n- Kerabu Timun dan Nenas
+        \n- Fruits and Vegetable Coleslaw
+        \n- Cendol Ais
+        \n- Guava Cordial</string>
+
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

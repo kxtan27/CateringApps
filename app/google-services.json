@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412993938653",
+    "firebase_url": "https://cateringapps-4d0be.firebaseio.com",
+    "project_id": "cateringapps-4d0be",
+    "storage_bucket": "cateringapps-4d0be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412993938653:android:55e452cd51b33d467f2734",
+        "android_client_info": {
+          "package_name": "com.example.cateringapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412993938653-olfs2epq6qp0fs6ucoq683t0tl0cjbjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cateringapps",
+            "certificate_hash": "a2eba4be4f641e986516c53db50c31b1263927ea"
+          }
+        },
+        {
+          "client_id": "412993938653-7l90blnlu3c51rcnij49ilros3anc5kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChQCLIzjA4syKuWJDw40gdvzvNMOGWDwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412993938653-7l90blnlu3c51rcnij49ilros3anc5kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
