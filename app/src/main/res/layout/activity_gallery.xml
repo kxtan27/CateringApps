@@ -14,6 +14,32 @@
         android:orientation="vertical">
 
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_button"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
         <TextView
             android:id="@+id/menu1"
             android:layout_width="wrap_content"
@@ -24,6 +50,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -80,6 +107,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -136,6 +164,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -192,6 +221,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -248,6 +278,7 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"

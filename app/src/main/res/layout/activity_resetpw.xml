@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/current_pw"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:drawableEnd="@drawable/password"
+        android:hint="@string/current_pw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/new_pw"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:drawableEnd="@drawable/password"
+        android:hint="@string/new_pw"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cnf_new_pw"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:drawableEnd="@drawable/password"
+        android:hint="@string/cnf_new_pw"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/chang_pw"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:text="@string/change_pw"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

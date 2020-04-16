@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         if (email.text.toString().isEmpty()) {
             return
         }
-        if (Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()) {
             return
         }
 
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             username.requestFocus()
         }
 
-        if (Patterns.EMAIL_ADDRESS.matcher(username.text.toString()).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(username.text.toString()).matches()) {
             username.error = "Please Enter Email!!!"
             username.requestFocus()
         }

@@ -18,6 +18,7 @@
         <activity android:name=".RegisterActivity"
             android:label="Register"/>
         <activity android:name=".GalleryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:label="Menu"/>
     </application>
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">QE Catering</string>
     <string name="signin_button">Sign In</string>
-    <string name="signup_button">Sign Up</string>
+    <string name="signup_button">Create an Account?</string>
     <string name="logo_description">Logo</string>
     <string name="menu_button">Menu</string>
     <string name="profile_button">Profile</string>
@@ -20,6 +20,7 @@
     <string name="caterer">Caterer</string>
     <string name="select">Please Select : </string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="acc">Account Settings</string>
     <string name="change_pw">Change Password</string>
     <string name="change_avatar">Change Avatar</string>
     <string name="phone">Contact No.</string>
@@ -59,6 +60,9 @@
     <string name="pic">Image</string>
     <string name="order">Order</string>
     <string name="about_us">About Us</string>
+    <string name="current_pw">Current Password</string>
+    <string name="new_pw">New Password</string>
+    <string name="cnf_new_pw">Confirm New Password</string>
 
     <string name="ma">Menu A</string>
     <string name="mb">Menu B</string>
@@ -145,4 +149,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="navigation_drawer">Drawer</string>
 </resources>

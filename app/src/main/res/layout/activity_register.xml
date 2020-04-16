@@ -31,6 +31,7 @@
             android:layout_marginTop="90dp"
             android:background="@android:color/white"
             android:drawableEnd="@drawable/mail"
+            android:ems="10"
             android:hint="@string/email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress" />
@@ -44,7 +45,7 @@
             android:drawableEnd="@drawable/password"
             android:hint="@string/password"
             android:importantForAutofill="no"
-            android:inputType="textVisiblePassword" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/sign_up_button"
