@@ -18,7 +18,10 @@
         <activity android:name=".RegisterActivity"
             android:label="Register"/>
         <activity android:name=".GalleryActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Menu"/>
+        <activity android:name=".ProfileActivity"
+            android:label="Menu"/>
+        <activity android:name=".ResetPasswordActivity"
             android:label="Menu"/>
     </application>
 

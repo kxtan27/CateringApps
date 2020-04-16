@@ -45,7 +45,7 @@
             android:drawableEnd="@drawable/password"
             android:hint="@string/password"
             android:importantForAutofill="no"
-            android:inputType="textPassword" />
+            android:inputType="textVisiblePassword" />
 
         <Button
             android:id="@+id/sign_up_button"

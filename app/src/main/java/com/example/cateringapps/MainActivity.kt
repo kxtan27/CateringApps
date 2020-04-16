@@ -24,35 +24,35 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
 
-    override fun onCreate(savedInstanceState: Bundle? ) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         auth = FirebaseAuth.getInstance()
 
-        sign_up_page_button.setOnClickListener{
-            startActivity(Intent(this,RegisterActivity::class.java))
+        sign_up_page_button.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
             finish()
         }
 
-        sign_in_button.setOnClickListener{
+        sign_in_button.setOnClickListener {
             doLogin()
         }
 
-        forget_pw_button.setOnClickListener{
+        forget_pw_button.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Enter your email.")
             val view = layoutInflater.inflate(R.layout.activity_forgetpw, null)
             val email = view.findViewById<EditText>(R.id.email)
             builder.setView(view)
-            builder.setPositiveButton("Reset",DialogInterface.OnClickListener{_, _ ->
+            builder.setPositiveButton("Reset", DialogInterface.OnClickListener { _, _ ->
                 forgotpassword(email)
             })
-            builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ -> })
+            builder.setNegativeButton("Close", DialogInterface.OnClickListener { _, _ -> })
             builder.show()
         }
     }
 
-    private fun forgotpassword(email : EditText){
+    private fun forgotpassword(email: EditText) {
         if (email.text.toString().isEmpty()) {
             return
         }
@@ -101,16 +101,17 @@ class MainActivity : AppCompatActivity() {
         updateUI(currentUser)
     }
 
-    private fun updateUI(currentUser : FirebaseUser?){
-        if(currentUser != null){
-            if(currentUser.isEmailVerified) {
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            if (currentUser.isEmailVerified) {
                 startActivity(Intent(this, GalleryActivity::class.java))
                 finish()
             }
-        }
-        else{
-            Toast.makeText(baseContext, "Please verify your email address",
-                Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(
+                baseContext, "Please verify your email address",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
-    }
+}
