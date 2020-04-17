@@ -25,12 +25,6 @@ class ProfileActivity:AppCompatActivity() {
             Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show()
             signout()
         }
-
-        auth.addAuthStateListener {
-            if (auth.currentUser == null){
-                this.finish()
-            }
-        }
     }
 
     private fun signout(){
