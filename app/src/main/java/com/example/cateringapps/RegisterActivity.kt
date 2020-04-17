@@ -31,7 +31,7 @@ class RegisterActivity: AppCompatActivity() {
             editText_email.requestFocus()
         }
 
-        if(Patterns.EMAIL_ADDRESS.matcher(editText_email.text.toString()).matches()){
+        if(!Patterns.EMAIL_ADDRESS.matcher(editText_email.text.toString()).matches()){
             editText_email.error = "Please Enter Email!!!"
             editText_email.requestFocus()
         }

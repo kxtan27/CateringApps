@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">QE Catering</string>
     <string name="signin_button">Sign In</string>
-    <string name="signup_button">Sign Up</string>
+    <string name="signup_button">Create an account?</string>
     <string name="logo_description">Logo</string>
     <string name="menu_button">Menu</string>
     <string name="profile_button">Profile</string>
