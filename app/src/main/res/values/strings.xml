@@ -155,4 +155,6 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="acc">Account Settings</string>
+    <string name="address">Address</string>
+    <string name="inquiries">Please feel free to contact us for any inquiries.</string>
 </resources>

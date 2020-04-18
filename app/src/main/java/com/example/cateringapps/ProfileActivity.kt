@@ -18,13 +18,15 @@ class ProfileActivity:AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         button_changepw.setOnClickListener{
-            startActivity(Intent(this, ResetPasswordActivity::class.java))
+            startActivity(Intent(this, ChangePasswordActivity::class.java))
         }
 
         button_sign_out.setOnClickListener{
             Toast.makeText(this, "Sign Out", Toast.LENGTH_SHORT).show()
             signout()
         }
+
+        
     }
 
     private fun signout(){

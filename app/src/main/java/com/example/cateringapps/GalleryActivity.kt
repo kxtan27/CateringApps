@@ -24,7 +24,7 @@ class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gallery2)
+        setContentView(R.layout.gallery)
         auth = FirebaseAuth.getInstance()
 
         menu_a.setOnClickListener{
@@ -90,10 +90,10 @@ class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.nav_menu -> {
-                startActivity(Intent(this, GalleryActivity::class.java))
+                finish()
             }
             R.id.nav_aboutus -> {
-                setContentView(R.layout.aboutus)
+                startActivity(Intent(this, FragmentAboutUs::class.java))
             }
             R.id.nav_update -> {
                 startActivity(Intent(this, ProfileActivity::class.java))

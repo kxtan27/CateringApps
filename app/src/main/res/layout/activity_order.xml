@@ -30,31 +30,31 @@
             android:layout_width="390dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal"
             tools:layout_marginTop="5dp">
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:hint="@string/first_name"
-                android:inputType="textPersonName"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:hint="@string/last_name"
-                android:inputType="textPersonName"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,7 +67,7 @@
 
             <EditText
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -75,9 +75,9 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:ems="10"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:importantForAutofill="no" />
+                android:hint="@string/address"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +90,7 @@
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -98,12 +98,12 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:hint="@string/phone"
-                android:inputType="phone"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="no"
+                android:inputType="phone" />
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -111,8 +111,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:hint="@string/num_of_ppl"
-                android:inputType="number"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="no"
+                android:inputType="number" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,7 +125,7 @@
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -138,7 +138,7 @@
 
             <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"

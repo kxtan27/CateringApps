@@ -19,11 +19,13 @@
             android:label="Register"/>
         <activity android:name=".GalleryActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:label="Menu"/>
+            android:label="Main Menu"/>
         <activity android:name=".ProfileActivity"
-            android:label="Menu"/>
-        <activity android:name=".ResetPasswordActivity"
-            android:label="Menu"/>
+            android:label="Profile"/>
+        <activity android:name=".ChangePasswordActivity"
+            android:label="Profile"/>
+        <activity android:name=".FragmentAboutUs"
+            android:label="About Us"/>
     </application>
 
 </manifest>

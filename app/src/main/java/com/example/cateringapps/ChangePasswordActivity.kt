@@ -8,7 +8,7 @@ import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_resetpw.*
 
-class ResetPasswordActivity : AppCompatActivity() {
+class ChangePasswordActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
@@ -31,17 +31,20 @@ class ResetPasswordActivity : AppCompatActivity() {
                 val user = auth.currentUser
                 if (user != null && user.email != null) {
                     val credential =
-                        EmailAuthProvider.getCredential(user.email!!, current_pw.text.toString())
-                    user?.reauthenticate(credential)
-                        ?.addOnCompleteListener {
+                        EmailAuthProvider.getCredential(
+                            user.email!!,
+                            current_pw.text.toString()
+                        )
+                    user.reauthenticate(credential)
+                        .addOnCompleteListener {
                             if (it.isSuccessful) {
                                 Toast.makeText(
                                     this,
                                     "Re-Authentication Success.",
                                     Toast.LENGTH_SHORT
                                 ).show()
-                                user?.updatePassword(new_pw.text.toString())
-                                    ?.addOnCompleteListener { task ->
+                                user.updatePassword(new_pw.text.toString())
+                                    .addOnCompleteListener { task ->
                                         if (task.isSuccessful) {
                                             Toast.makeText(
                                                 this,
@@ -49,7 +52,12 @@ class ResetPasswordActivity : AppCompatActivity() {
                                                 Toast.LENGTH_SHORT
                                             ).show()
                                             auth.signOut()
-                                            startActivity(Intent(this, MainActivity::class.java))
+                                            startActivity(
+                                                Intent(
+                                                    this,
+                                                    MainActivity::class.java
+                                                )
+                                            )
                                             finish()
                                         }
                                     }
@@ -66,11 +74,12 @@ class ResetPasswordActivity : AppCompatActivity() {
                     finish()
                 }
             } else {
-                Toast.makeText(this, "Change Password Successful!!!.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Change Password Successful!!!.", Toast.LENGTH_SHORT)
+                    .show()
             }
         } else {
             Toast.makeText(this, "Please enter all the fields!!!", Toast.LENGTH_SHORT).show()
         }
-
     }
+
 }
