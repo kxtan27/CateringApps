@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             if (currentUser.isEmailVerified) {
-                startActivity(Intent(this, GalleryActivity::class.java))
+                startActivity(Intent(this, FragmentGallery::class.java))
             }
         } else {
             Toast.makeText(

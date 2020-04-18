@@ -15,7 +15,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_gallery.*
 
-class GalleryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     lateinit var toolbar: Toolbar
     lateinit var drawerLayout: DrawerLayout
