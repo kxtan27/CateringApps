@@ -13,6 +13,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,7 +46,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.3.0'
     implementation 'com.google.firebase:firebase-core:17.3.0'
     implementation 'com.google.firebase:firebase-database-ktx:19.2.1'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:multidex:1.0.3'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
-    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
 
 }
