@@ -17,7 +17,7 @@
             android:id="@+id/logo_image"
             android:layout_width="380dp"
             android:layout_height="200dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:contentDescription="@string/logo_description"
             android:src="@drawable/logo" />
 
@@ -65,20 +65,6 @@
             android:text="@string/forget_pw"
             android:textColor="@android:color/black"
             android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/sign_up_page_button"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40sp"
-            android:layout_marginBottom="50dp"
-            android:background="@android:drawable/screen_background_dark_transparent"
-            android:text="@string/signup_button"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
             android:textStyle="bold" />
 
     </LinearLayout>
