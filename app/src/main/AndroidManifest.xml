@@ -29,6 +29,8 @@
             android:label="Profile"/>
         <activity android:name=".FragmentAboutUs"
             android:label="About Us"/>
+        <activity android:name=".OrderActivity"
+            android:label="Order Details"/>
     </application>
 
 </manifest>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background" >
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@android:drawable/screen_background_light_transparent"
         android:orientation="vertical">
 
@@ -162,12 +162,63 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="8dp">
+
+            <RadioButton
+                android:id="@+id/menu_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ma"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/menu_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/mb"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/menu_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="@string/mc"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/menu_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="@string/md"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/menu_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/me"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
         <Button
             android:id="@+id/confirm_order"
             android:layout_width="130dp"
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="150dp"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:text="@string/cnf_order"
             android:textColor="@android:color/white"
@@ -176,4 +227,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

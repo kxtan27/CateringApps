@@ -56,7 +56,6 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -78,8 +77,6 @@ class ProfileActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_GET_CONTENT
             startActivityForResult(Intent.createChooser(intent, "select picture"), PICK_IMAGE_CODE)
         }
-
-
 
         button_changepw.setOnClickListener {
             startActivity(Intent(this, ChangePasswordActivity::class.java))

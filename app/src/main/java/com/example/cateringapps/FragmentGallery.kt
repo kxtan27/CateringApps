@@ -27,6 +27,22 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
         setContentView(R.layout.gallery)
         auth = FirebaseAuth.getInstance()
 
+        add_a.setOnClickListener {
+            startActivity(Intent(this, OrderActivity::class.java))
+        }
+        add_b.setOnClickListener {
+            startActivity(Intent(this, OrderActivity::class.java))
+        }
+        add_c.setOnClickListener {
+            startActivity(Intent(this, OrderActivity::class.java))
+        }
+        add_d.setOnClickListener {
+            startActivity(Intent(this, OrderActivity::class.java))
+        }
+        add_e.setOnClickListener {
+            startActivity(Intent(this, OrderActivity::class.java))
+        }
+
         menu_a.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Menu")
@@ -35,7 +51,6 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
             builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ -> })
             builder.show()
         }
-
         menu_b.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Menu")
@@ -44,7 +59,6 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
             builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ -> })
             builder.show()
         }
-
         menu_c.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Menu")
@@ -53,7 +67,6 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
             builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ -> })
             builder.show()
         }
-
         menu_d.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Menu")
@@ -62,7 +75,6 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
             builder.setNegativeButton("Close",DialogInterface.OnClickListener { _, _ -> })
             builder.show()
         }
-
         menu_e.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Menu")
@@ -107,4 +119,5 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
+
 }
