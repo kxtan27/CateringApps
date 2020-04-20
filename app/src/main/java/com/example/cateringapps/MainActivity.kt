@@ -20,25 +20,13 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         sign_up_page_button.setOnClickListener {
+            finish()
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
         sign_in_page_button.setOnClickListener {
+            finish()
             startActivity(Intent(this, LoginActivity::class.java))
-        }
-    }
-
-    public override fun onStart() {
-        super.onStart()
-        val currentUser = auth.currentUser
-        updateUI(currentUser)
-    }
-
-    private fun updateUI(currentUser: FirebaseUser?) {
-        if (currentUser != null) {
-            if (currentUser.isEmailVerified) {
-                startActivity(Intent(this, FragmentGallery::class.java))
-            }
         }
     }
 }

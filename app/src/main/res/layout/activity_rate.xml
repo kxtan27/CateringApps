@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:numStars="5"
+            android:max="5"
             tools:layout_marginStart="90dp" />
 
         <EditText

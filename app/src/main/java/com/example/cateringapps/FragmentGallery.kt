@@ -28,18 +28,23 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
         auth = FirebaseAuth.getInstance()
 
         add_a.setOnClickListener {
+            finish()
             startActivity(Intent(this, OrderActivity::class.java))
         }
         add_b.setOnClickListener {
+            finish()
             startActivity(Intent(this, OrderActivity::class.java))
         }
         add_c.setOnClickListener {
+            finish()
             startActivity(Intent(this, OrderActivity::class.java))
         }
         add_d.setOnClickListener {
+            finish()
             startActivity(Intent(this, OrderActivity::class.java))
         }
         add_e.setOnClickListener {
+            finish()
             startActivity(Intent(this, OrderActivity::class.java))
         }
 
@@ -105,14 +110,18 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 finish()
             }
             R.id.nav_aboutus -> {
+                finish()
                 startActivity(Intent(this, FragmentAboutUs::class.java))
             }
             R.id.nav_update -> {
+                finish()
                 startActivity(Intent(this, ProfileActivity::class.java))
+
             }
             R.id.nav_logout -> {
                 Toast.makeText(this, "Sign out", Toast.LENGTH_SHORT).show()
                 FirebaseAuth.getInstance().signOut()
+                finish()
                 startActivity(Intent(this, MainActivity::class.java))
     }
 }

@@ -26,71 +26,41 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="390dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
-            android:orientation="horizontal"
-            tools:layout_marginTop="5dp">
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:hint="@string/first_name"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:hint="@string/last_name"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName" />
-        </LinearLayout>
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/address"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine" />
 
         <LinearLayout
             android:layout_width="390dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <EditText
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:ems="10"
-                android:hint="@string/address"
-                android:importantForAutofill="no"
-                android:inputType="textMultiLine" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="390dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
-
-            <EditText
+                android:id="@+id/phone"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -102,8 +72,9 @@
                 android:inputType="phone" />
 
             <EditText
+                android:id="@+id/ppl"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -118,14 +89,15 @@
         <LinearLayout
             android:layout_width="390dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/date"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -137,8 +109,9 @@
                 android:inputType="date" />
 
             <EditText
+                android:id="@+id/time"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
@@ -155,7 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:text="@string/order_detail"
             android:textColor="@android:color/black"
@@ -165,52 +138,93 @@
         <androidx.cardview.widget.CardView
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
             android:layout_marginTop="5dp"
             app:cardCornerRadius="8dp">
 
-            <RadioButton
-                android:id="@+id/menu_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/ma"
-                android:textSize="16sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal" />
 
-            <RadioButton
-                android:id="@+id/menu_b"
+            <RadioGroup
+                android:id="@+id/choose"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="@string/mb"
-                android:textSize="16sp" />
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp">
 
-            <RadioButton
-                android:id="@+id/menu_c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
-                android:text="@string/mc"
-                android:textSize="16sp" />
+                <RadioButton
+                    android:id="@+id/menu_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ma"
+                    android:textSize="16sp" />
 
-            <RadioButton
-                android:id="@+id/menu_d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
-                android:text="@string/md"
-                android:textSize="16sp" />
+                <RadioButton
+                    android:id="@+id/menu_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mb"
+                    android:textSize="16sp" />
 
-            <RadioButton
-                android:id="@+id/menu_e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="170dp"
-                android:layout_marginBottom="10dp"
-                android:text="@string/me"
-                android:textSize="16sp" />
+                <RadioButton
+                    android:id="@+id/menu_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mc"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/menu_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/md"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/menu_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/me"
+                    android:textSize="16sp" />
+            </RadioGroup>
 
         </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:text="@string/price"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/confirm_order"

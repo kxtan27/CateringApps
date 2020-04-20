@@ -45,27 +45,20 @@
     <string name="rate">Rate Us</string>
     <string name="rate_desc">Please share your experience with us</string>
     <string name="feedback">Feedback</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
+    <string name="name">Name</string>
     <string name="num_of_ppl">Number of People</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
+    <string name="date">Date (DD/MM/YYYY)</string>
+    <string name="time">Time (HH:MM)</string>
     <string name="enter_order_details">Enter Order Details</string>
     <string name="order_detail">Order Details</string>
     <string name="cnf_order">Confirm Order</string>
-    <string name="bbq">BBQ Buffet</string>
-    <string name="price">Price From RM150++</string>
-    <string name="pack">Package</string>
     <string name="desc">Descriptions</string>
     <string name="add">Add to Order</string>
-    <string name="a">A</string>
-    <string name="b">B</string>
-    <string name="c">C</string>
-    <string name="d">D</string>
     <string name="detail">More Details</string>
     <string name="pic">Image</string>
     <string name="order">Order</string>
     <string name="about_us">About Us</string>
+    <string name="price">Price = RM </string>
 
     <string name="ma">Menu A</string>
     <string name="mb">Menu B</string>
@@ -141,6 +134,14 @@
         \n- Fruits and Vegetable Coleslaw
         \n- Cendol Ais
         \n- Guava Cordial</string>
+
+    <string-array name="choose">
+        <item>Menu A [RM 17.00/pax]</item>
+        <item>Menu B [RM 22.00/pax]</item>
+        <item>Menu C [RM 27.00/pax]</item>
+        <item>Menu D [RM 33.00/pax]</item>
+        <item>Menu E [RM 38.00/pax]</item>
+    </string-array>
 
 
     <string name="title_activity_login">Sign in</string>
