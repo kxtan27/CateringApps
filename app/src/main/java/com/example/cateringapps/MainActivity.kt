@@ -2,8 +2,10 @@ package com.example.cateringapps
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -25,6 +27,25 @@ class MainActivity : AppCompatActivity() {
         sign_in_page_button.setOnClickListener {
             finish()
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+    }
+
+    public override fun onStart() {
+        super.onStart()
+        val currentUser = auth.currentUser
+        updateUI(currentUser)
+    }
+
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            if (currentUser.isEmailVerified) {
+                startActivity(Intent(this, FragmentGallery::class.java))
+            }
+        } else {
+            Toast.makeText(
+                baseContext, "Please verify your email address",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }
