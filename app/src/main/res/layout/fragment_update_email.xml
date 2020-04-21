@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UpdateEmail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutHead"
+            android:background="#5CC09F"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:background="@drawable/chef1"
+                android:layout_centerInParent="true"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+
+            <TextView
+                android:text="@string/update_email"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image_view"
+                android:enabled="true"
+                android:id="@+id/edit_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:id="@+id/layoutPassword"
+            android:padding="16dp"
+            android:visibility="invisible"
+            android:layout_below="@id/layoutHead"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:text="@string/to_change_email_you_need_to_enter_your_password_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:background="@android:color/white"
+                android:maxLength="10"
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:hint="password"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:text="@string/authenticate"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:id="@+id/button_authenticate"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/layoutUpdateEmail"
+            android:padding="16dp"
+            android:layout_below="@id/layoutHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:background="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAlignment="center"
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:hint="@string/new_email"
+                android:inputType="textEmailAddress"
+                android:layout_height="50dp"
+                android:singleLine="true"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:textAllCaps="false"
+                android:text="@string/update"
+                android:id="@+id/button_update"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

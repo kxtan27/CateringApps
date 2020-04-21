@@ -33,6 +33,12 @@
             android:label="About Us"/>
         <activity android:name=".OrderActivity"
             android:label="Order Details"/>
+        <activity android:name=".UpdateEmail"
+            android:label="Update Email"/>
+        <activity android:name=".AddPhoneNumber"
+            android:label="Add phone number"/>
+        <activity android:name=".EditProfile"
+            android:label="Change Avatar" />
     </application>
 
 </manifest>

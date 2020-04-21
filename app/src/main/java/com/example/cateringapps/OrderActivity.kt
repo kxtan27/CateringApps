@@ -2,8 +2,9 @@ package com.example.cateringapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.Toast
+import android.view.View
+import android.widget.*
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_order.*
@@ -17,6 +18,8 @@ class OrderActivity : AppCompatActivity() {
     lateinit var ppl: EditText
     lateinit var date: EditText
     lateinit var time: EditText
+    lateinit var choose : Spinner
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +31,7 @@ class OrderActivity : AppCompatActivity() {
         ppl = findViewById(R.id.ppl)
         date = findViewById(R.id.date)
         time = findViewById(R.id.time)
+        choose = findViewById(R.id.choose)
 
         confirm_order.setOnClickListener {
             confirm_order()
@@ -68,11 +72,20 @@ class OrderActivity : AppCompatActivity() {
             time.requestFocus()
         }
 
+        //Spinner
+        spinner()
+
         val ref = FirebaseDatabase.getInstance().getReference("customer")
         val customerId = ref.push().key
         val customer = Customer(
-            customerId, name.text.toString(), address.text.toString(),
-            phone.text.toString(), ppl.text.toString(), date.text.toString(), time.text.toString()
+            customerId,
+            name.text.toString(),
+            address.text.toString(),
+            phone.text.toString(),
+            ppl.text.toString(),
+            date.text.toString(),
+            time.text.toString(),
+            choose.selectedItem.toString()
         )
         ref.child(customerId.toString()).setValue(customer).addOnCompleteListener {
             Toast.makeText(
@@ -80,6 +93,31 @@ class OrderActivity : AppCompatActivity() {
                 "Order successful!!! We will re-confirm the order with you.Thank You.",
                 Toast.LENGTH_SHORT
             ).show()
+        }
+    }
+
+    private fun spinner(){
+        val menu = resources.getStringArray(R.array.choose)
+        if (choose != null) {
+            val adapter = ArrayAdapter(
+                this,
+                android.R.layout.simple_spinner_item, menu
+            )
+
+            choose.adapter = adapter
+
+            choose.onItemSelectedListener = object :
+                AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(parent: AdapterView<*>,
+                                            view: View, position: Int, id: Long
+                ) {
+
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>) {
+                    total.text = "00.00"
+                }
+            }
         }
     }
 }

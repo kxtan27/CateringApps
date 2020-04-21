@@ -143,59 +143,12 @@
             app:cardCornerRadius="8dp">
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/choose"
                 android:layout_width="350dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center_horizontal" />
-
-            <RadioGroup
-                android:id="@+id/choose"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="60dp">
-
-                <RadioButton
-                    android:id="@+id/menu_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/ma"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/menu_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/mb"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/menu_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/mc"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/menu_d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/md"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:id="@+id/menu_e"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/me"
-                    android:textSize="16sp" />
-            </RadioGroup>
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
 
         </androidx.cardview.widget.CardView>
 
@@ -217,7 +170,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/price"
+                android:id="@+id/total"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/screen_background_light_transparent"
@@ -232,7 +185,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="150dp"
+            android:layout_marginBottom="300dp"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:text="@string/cnf_order"
             android:textColor="@android:color/white"

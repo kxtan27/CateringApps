@@ -47,8 +47,8 @@
     <string name="feedback">Feedback</string>
     <string name="name">Name</string>
     <string name="num_of_ppl">Number of People</string>
-    <string name="date">Date (DD/MM/YYYY)</string>
-    <string name="time">Time (HH:MM)</string>
+    <string name="date">Date [DD/MM/YYYY]</string>
+    <string name="time">Time [HH:MM]</string>
     <string name="enter_order_details">Enter Order Details</string>
     <string name="order_detail">Order Details</string>
     <string name="cnf_order">Confirm Order</string>
@@ -136,11 +136,11 @@
         \n- Guava Cordial</string>
 
     <string-array name="choose">
-        <item>Menu A [RM 17.00/pax]</item>
-        <item>Menu B [RM 22.00/pax]</item>
-        <item>Menu C [RM 27.00/pax]</item>
-        <item>Menu D [RM 33.00/pax]</item>
-        <item>Menu E [RM 38.00/pax]</item>
+        <item>Menu A [RM 17.00/pax] </item>
+        <item>Menu B [RM 22.00/pax] </item>
+        <item>Menu C [RM 27.00/pax] </item>
+        <item>Menu D [RM 33.00/pax] </item>
+        <item>Menu E [RM 38.00/pax] </item>
     </string-array>
 
 
@@ -158,4 +158,11 @@
     <string name="acc">Account Settings</string>
     <string name="address">Address</string>
     <string name="inquiries">Please feel free to contact us for any inquiries.</string>
+    <string name="update_email">Update Email</string>
+    <string name="to_change_email_you_need_to_enter_your_password_again">To change email you need to enter your password again</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="new_email">New Email</string>
+    <string name="update">Update</string>
+    <string name="go_edit_profile_to_insert">Go edit profile to insert</string>
+    <string name="enter_name">Enter Name</string>
 </resources>

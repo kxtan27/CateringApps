@@ -6,69 +6,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/screen_background_light_transparent"
-        android:gravity="center_horizontal"
         android:orientation="vertical">
-
 
         <ImageView
             android:id="@+id/image_profile"
             android:layout_width="120dp"
-            android:layout_height="118dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="?attr/actionBarSize"
             android:contentDescription="@string/profile"
-            android:src="@drawable/logo"
-            tools:srcCompat="@drawable/chef" />
+            android:src="@drawable/chef"
+            />
 
-        <Button
-            android:id="@+id/change_avatar"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
+
+        <TextView
+            android:id="@+id/text_displayUsername"
+            android:layout_width="280sp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="@android:drawable/screen_background_dark_transparent"
-            android:text="@string/change_avatar"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editText_username"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="30dp"
-            android:background="@android:color/white"
             android:drawableEnd="@drawable/user"
-            android:hint="@string/username"
+            android:hint="@string/go_edit_profile_to_insert"
             android:importantForAutofill="no"
-            android:inputType="text" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText_contactNumber"
-            android:layout_width="200dp"
+        <TextView
+            android:id="@+id/text_displayEmail"
+            android:layout_width="280sp"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@android:color/white"
-            android:drawableEnd="@drawable/contact1"
-            android:hint="@string/phone"
-            android:importantForAutofill="no"
-            android:inputType="phone" />
-
-        <EditText
-            android:id="@+id/editText_email"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/white"
+            android:background="@android:drawable/screen_background_dark_transparent"
             android:drawableEnd="@drawable/mail"
-            android:hint="@string/email"
+            android:drawablePadding="16dp"
             android:importantForAutofill="no"
-            android:inputType="textEmailAddress" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/text_displayPhone"
+            android:layout_width="280sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:drawableEnd="@drawable/contact1"
+            android:drawablePadding="16dp"
+            android:importantForAutofill="no"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeTextType="uniform" />
+
+
 
         <Button
             android:id="@+id/button_profile"
@@ -99,6 +105,7 @@
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:text="@string/history"
             android:textColor="@android:color/white"
@@ -109,12 +116,15 @@
             android:id="@+id/button_sign_out"
             android:layout_width="200dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="150dp"
+            android:layout_marginBottom="300dp"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:text="@string/signout"
             android:textColor="@android:color/white"
+
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
+
 </ScrollView>
