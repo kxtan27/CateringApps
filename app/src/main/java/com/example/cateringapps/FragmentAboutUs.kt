@@ -17,5 +17,12 @@ class FragmentAboutUs : AppCompatActivity() {
             intent.data = Uri.parse("tel:+60196869010")
             startActivity(intent)
         }
+
+        locate.setOnClickListener {
+            val uri = "https://goo.gl/maps/TDCreCYa7ZAs9BjE8"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+            intent.setPackage("com.google.android.apps.maps")
+            startActivity(intent)
+        }
     }
 }

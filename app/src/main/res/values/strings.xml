@@ -170,4 +170,6 @@
     <string name="service">Services of us</string>
     <string name="food_and_beverage">Food and Beverage</string>
     <string name="sign_up">Sign Up</string>
+    <string name="locate">Locate Us</string>
+    <string name="map">Map</string>
 </resources>
