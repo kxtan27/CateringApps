@@ -39,6 +39,8 @@
             android:label="Add phone number"/>
         <activity android:name=".EditProfile"
             android:label="Change Avatar" />
+        <activity android:name=".RatingActivity"
+            android:label="Rate Us"/>
     </application>
 
 </manifest>

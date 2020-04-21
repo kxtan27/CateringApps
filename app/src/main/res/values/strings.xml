@@ -165,4 +165,9 @@
     <string name="update">Update</string>
     <string name="go_edit_profile_to_insert">Go edit profile to insert</string>
     <string name="enter_name">Enter Name</string>
+    <string name="order_menu">"Order Menu : "</string>
+    <string name="a_b_c_d_e">A/B/C/D/E</string>
+    <string name="service">Services of us</string>
+    <string name="food_and_beverage">Food and Beverage</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

@@ -113,6 +113,10 @@ class FragmentGallery : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 finish()
                 startActivity(Intent(this, FragmentAboutUs::class.java))
             }
+            R.id.nav_rateus -> {
+                finish()
+                startActivity(Intent(this, RatingActivity::class.java))
+            }
             R.id.nav_update -> {
                 finish()
                 startActivity(Intent(this, ProfileActivity::class.java))

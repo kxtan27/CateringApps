@@ -1,6 +1,7 @@
 package com.example.cateringapps
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -28,7 +29,8 @@ class AddPhoneNumber : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_add_phone)
 
-
+        layoutPhone.visibility = View.VISIBLE
+        layoutVerification.visibility = View.GONE
 
         button_send_verification.setOnClickListener {
 
@@ -53,6 +55,7 @@ class AddPhoneNumber : AppCompatActivity() {
 
             layoutPhone.visibility = View.GONE
             layoutVerification.visibility = View.VISIBLE
+
         }
 
         button_verify.setOnClickListener {
@@ -69,14 +72,11 @@ class AddPhoneNumber : AppCompatActivity() {
                 val credential = PhoneAuthProvider.getCredential(it,code)
                 addPhoneNumber(credential)
             }
-
-            layoutPhone.visibility = View.VISIBLE
-            layoutVerification.visibility = View.GONE
             finish()
         }
     }
 
-    //val view = setContentView(R.layout.fragment_add_phone)
+
 
     private fun Context.toast(message: String) =
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -92,10 +92,7 @@ class AddPhoneNumber : AppCompatActivity() {
             }
 
             override fun onVerificationFailed(exception: FirebaseException) {
-                Toast.makeText(
-                    baseContext, "Failed",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(baseContext, "Sign Out", Toast.LENGTH_SHORT).show()
             }
 
             override fun onCodeSent(verificationId: String, token: PhoneAuthProvider.ForceResendingToken)
@@ -117,7 +114,7 @@ class AddPhoneNumber : AppCompatActivity() {
                     setContentView(R.layout.fragment_add_phone)
 
                 } else {
-                    this.toast(task.exception?.message!!)
+                    Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
                 }
             }
     }

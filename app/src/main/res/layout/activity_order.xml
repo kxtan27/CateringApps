@@ -124,59 +124,40 @@
         </LinearLayout>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/order_detail"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            app:cardCornerRadius="8dp">
-
-            <Spinner
-                android:id="@+id/choose"
-                android:layout_width="350dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
-
-        </androidx.cardview.widget.CardView>
-
         <LinearLayout
-            android:layout_width="380dp"
-            android:layout_height="30dp"
+            android:layout_width="390dp"
+            android:layout_height="0dp"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/screen_background_light_transparent"
-                android:text="@string/price"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="@string/order_menu"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/total"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/screen_background_light_transparent"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/menu"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="@string/a_b_c_d_e"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <Button

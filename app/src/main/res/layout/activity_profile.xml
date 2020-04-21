@@ -13,7 +13,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/screen_background_light_transparent"
         android:orientation="vertical">
 
         <ImageView
@@ -21,59 +20,56 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/chef"
             android:contentDescription="@string/profile"
-            android:src="@drawable/chef"
-            />
+            android:src="@drawable/chef" />
 
 
         <TextView
             android:id="@+id/text_displayUsername"
-            android:layout_width="280sp"
+            android:layout_width="380sp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/screen_background_dark_transparent"
+            android:background="@android:drawable/screen_background_light_transparent"
             android:drawableEnd="@drawable/user"
             android:hint="@string/go_edit_profile_to_insert"
             android:importantForAutofill="no"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="20sp" />
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/text_displayEmail"
-            android:layout_width="280sp"
+            android:layout_width="380sp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/screen_background_dark_transparent"
+            android:background="@android:drawable/screen_background_light_transparent"
             android:drawableEnd="@drawable/mail"
             android:drawablePadding="16dp"
             android:importantForAutofill="no"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            app:autoSizeMaxTextSize="100sp"
-            app:autoSizeMinTextSize="15sp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
             app:autoSizeTextType="uniform" />
 
         <TextView
             android:id="@+id/text_displayPhone"
-            android:layout_width="280sp"
+            android:layout_width="380sp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/screen_background_dark_transparent"
+            android:background="@android:drawable/screen_background_light_transparent"
             android:drawableEnd="@drawable/contact1"
             android:drawablePadding="16dp"
             android:importantForAutofill="no"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            app:autoSizeMaxTextSize="100sp"
-            app:autoSizeMinTextSize="15sp"
-            app:autoSizeTextType="uniform" />
-
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            tools:autoSizeTextType="uniform" />
 
 
         <Button
@@ -96,18 +92,6 @@
             android:layout_marginTop="20dp"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:text="@string/change_pw"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button_orderhis"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:background="@android:drawable/screen_background_dark_transparent"
-            android:text="@string/history"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
